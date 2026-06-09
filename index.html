@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el Número</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+
+<body>
+
+    <main class="contenedor">
+
+        <h1>Adivina el Número</h1>
+
+        <!-- DIFICULTAD -->
+        <section class="tarjeta">
+            <h2>Dificultad</h2>
+
+            <div class="grupo-dificultad">
+
+                <button class="btn-dificultad" data-nivel="facil">
+                    Fácil
+                </button>
+
+                <button class="btn-dificultad activa" data-nivel="normal">
+                    Normal
+                </button>
+
+                <button class="btn-dificultad" data-nivel="dificil">
+                    Difícil
+                </button>
+
+            </div>
+        </section>
+
+        <!-- INFORMACIÓN -->
+        <section class="tarjeta">
+            <h2>Información del Juego</h2>
+
+            <p>
+                Rango:
+                <span id="rangoJuego">1 - 100</span>
+            </p>
+
+            <p>
+                Intentos restantes:
+                <span id="intentosRestantes">7</span>
+            </p>
+        </section>
+
+        <!-- INGRESO -->
+        <section class="tarjeta">
+            <h2>Ingresa tu número</h2>
+
+            <form id="formIntento">
+
+                <input
+                    type="number"
+                    id="inputIntento"
+                    placeholder="Ingresa un número">
+
+                <button type="submit">
+                    Intentar
+                </button>
+
+            </form>
+        </section>
+
+        <!-- PISTA -->
+        <section class="tarjeta">
+            <h2>Pista Actual</h2>
+
+            <p id="mensajePista">
+                Selecciona una dificultad y comienza a jugar.
+            </p>
+        </section>
+
+        <!-- HISTORIAL -->
+        <section class="tarjeta">
+            <h2>Historial de Intentos</h2>
+
+            <div id="historialIntentos">
+
+            </div>
+        </section>
+
+        <!-- RESULTADO -->
+        <section class="tarjeta">
+            <h2>Resultado</h2>
+
+            <p id="resultadoJuego"></p>
+
+            <button id="btnNuevoJuego">
+                Nuevo Juego
+            </button>
+        </section>
+
+        <!-- MARCADOR -->
+        <section class="tarjeta">
+            <h2>Marcador</h2>
+
+            <div class="marcador">
+
+                <p>
+                    Victorias:
+                    <span id="victorias">0</span>
+                </p>
+
+                <p>
+                    Derrotas:
+                    <span id="derrotas">0</span>
+                </p>
+
+                <p>
+                    Racha:
+                    <span id="racha">0</span>
+                </p>
+
+                <p>
+                    Racha máxima:
+                    <span id="rachaMax">0</span>
+                </p>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
+```
